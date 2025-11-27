@@ -3,36 +3,89 @@ mi primera pagina web
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi página personal - Laboratorio</title>
-
-  <!-- Enlace al archivo CSS -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mi Página - Laboratorio 1</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1 id="titulo-principal">mi primera pagina web(Ejemplo)</h1>
+  <header>
+    <h1>Sobre mí</h1>
+    <p>Hola, soy Deyanira Álvarez — esta es mi página de práctica del laboratorio.</p>
   </header>
 
-  <main class="contenido">
-    <section class="card">
-      <h2 class="card-titulo">Resultados Esperados</h2>
-      <p>Actividad 1. Vincular y estilizar con archivos CSS.</p>
-      <ul>
-        <li>Paso 1. Crear y enlazar un archivo CSS.</li>
-        <li>Paso 2. Aplicar estilos personalizados.</li>
-        <li>Paso 3. Añadir cambios y subir al repositorio remoto.</li>
-      </ul>
-    </section>
+  <!-- Paso 3: imagen y enlaces -->
+  <section id="foto-y-redes">
+    <h2>Mi foto y redes</h2>
+    <img src="images/mi-foto.jpg" alt="Mi foto" width="200">
+    <p>Sígueme en:</p>
+    <ul>
+      <li><a href="https://www.facebook.com/deyaniraalvarezjimenez" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.instagram.com/@deyaniraalvarezj" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/deyaniraalvarez" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </section>
 
-    <section id="conclusiones" class="card">
-      <h3>Conclusiones</h3>
-      <p>Este laboratorio te permitió agregar estilos a tu página web personal utilizando HTML y CSS.</p>
-    </section>
-  </main>
+  <!-- Paso 4: listas y tabla -->
+  <section id="listas-y-tabla">
+    <h2>Mis pasatiempos</h2>
+    <!-- lista desordenada -->
+    <ul>
+      <li>Leer novelas</li>
+      <li>Programar pequeños proyectos</li>
+      <li>Hacer ejercicio</li>
+    </ul>
 
-  <footer class="site-footer">
-    <p>Eso es todo por ahora</p>
+    <h2>Tareas pendientes (ordenadas por prioridad)</h2>
+    <!-- lista ordenada -->
+    <ol>
+      <li>Terminar el laboratorio de HTML</li>
+      <li>Estudiar Git y GitHub</li>
+      <li>Practicar CSS</li>
+    </ol>
+
+    <h2>Horario semanal</h2>
+    <!-- tabla -->
+    <table>
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Actividad principal</th>
+          <th>Hora</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes</td><td>Estudio de HTML</td><td>6:00 - 8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Miércoles</td><td>Práctica de Git</td><td>5:00 - 7:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sábado</td><td>Proyecto personal</td><td>10:00 AM - 1:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Paso 6: formulario de contacto -->
+  <section id="contacto">
+    <h2>Formulario de contacto</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="deyanira"><br><br>
+
+      <label for="correo">Correo electrónico:</label><br>
+      <input type="email" id="correo" name="correo" placeholder="deyaniraalvarezj@gmail.com"><br><br>
+
+      <label for="mensaje">Mensaje (¿Por qué desea contactarme?):</label><br>
+      <input type="text" id="mensaje" name="mensaje" placeholder="taller"><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Laboratorio 1 — Fundamentos de HTML y Git</p>
   </footer>
 </body>
 </html>
