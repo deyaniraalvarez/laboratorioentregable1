@@ -1,57 +1,49 @@
-/* styles.css - estilos del laboratorio */
-:root{
-  --primario: #7b61ff;
-  --secundario: #6fe3ff;
-  --fondo: #ffffff;
-  --texto: #222;
-  --card-bg: #f7f7fb;
-}
-
-*{box-sizing: border-box;}
-body{
-  margin:0;
+/* styles.css */
+body {
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--fondo);
-  color: var(--texto);
-  line-height: 1.5;
-  padding: 24px;
+  margin: 20px;
+  line-height: 1.4;
+  color: #222;
 }
 
-.site-header{
-  border-bottom: 4px solid var(--primario);
-  padding-bottom: 12px;
-  margin-bottom: 18px;
+header h1 {
+  background: #123456;
+  color: white;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
 }
 
-#titulo-principal{
-  font-size: 1.6rem;
-  margin: 0;
-  color: var(--primario);
+section {
+  margin-top: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
-.contenido{
-  display: grid;
-  gap: 14px;
-  grid-template-columns: 1fr;
-  max-width: 900px;
-}
-
-.card{
-  background: var(--card-bg);
-  padding: 14px;
+img {
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: block;
+  margin-bottom: 8px;
 }
 
-.card-titulo{
-  margin-top: 0;
-  color: var(--primario);
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
 }
-
-.site-footer{
-  margin-top: 24px;
-  padding-top: 12px;
-  border-top: 1px solid #ddd;
-  text-align: center;
-  color: #666;
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 6px;
+}
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
